@@ -1,0 +1,66 @@
+.container {
+    top: 0;
+    right: 0;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 254px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    
+    
+}
+
+.mask {
+    position: static;
+    margin-top: -272px;
+    height: 100%;
+    width: auto;
+    background-color: rgba(49, 49, 107, 0.567);
+    opacity: 0.5;
+    z-index: 1;
+    
+}
+
+button {
+    margin-left: 25px;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    transition: 0.5s;
+}
+
+.menu-label {
+    font-size: 13px;
+    color: white;
+    letter-spacing: 2.7px;
+    position: fixed;
+    padding-left: 15px;
+}
+.menu-number {
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 2.7px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 120px;
+    row-gap: 30px;
+}
+
+.close-btn {
+    position: absolute;
+    border: none;
+    background: transparent;
+    top: 34px;
+    right: 26px;
+    transition: 0.5s;
+}
+
+.close-btn:active {
+    opacity: 0.5;
+}

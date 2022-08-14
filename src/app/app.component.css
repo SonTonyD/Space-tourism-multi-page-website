@@ -1,0 +1,23 @@
+.container {
+    height: 668px;
+    width: 376px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 26px;
+}
+
+.open-menu {
+    width: 40px;
+    height: 40px;
+    margin-top: 33px;
+    margin-right: 24px;
+}
