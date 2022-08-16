@@ -72,9 +72,6 @@
     background: transparent;
     border: none;
 
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-thickness: 0.2rem;
 }
 
 .planet-name {

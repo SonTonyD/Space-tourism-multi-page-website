@@ -8,10 +8,10 @@
         <img src= "{{currentPlanetImage}}" width = "170" height = "170"> 
     </div>
     <div class="planet-navigation">
-        <button (click)="applyChangeDestinations(moonData)">moon</button>
-        <button (click)="applyChangeDestinations(marsData)">mars</button>
-        <button (click)="applyChangeDestinations(europaData)">europa</button>
-        <button (click)="applyChangeDestinations(titanData)">titan</button>
+        <button (click)="applyChangeDestinations(moonData)" #moonBtn>moon</button>
+        <button (click)="applyChangeDestinations(marsData)" #marsBtn>mars</button>
+        <button (click)="applyChangeDestinations(europaData)" #europaBtn>europa</button>
+        <button (click)="applyChangeDestinations(titanData)" #titanBtn>titan</button>
     </div>
     <div class="planet-name">{{currentPlanetName}}</div>
     <div class="planet-description"> {{currentPlanetDescription}} </div>
