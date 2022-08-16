@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,14 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
+
+  @ViewChild('screen') containerElement!: ElementRef;
   
   isMenuOpen = false;
-  state = [true, false, false, false, false]
+  currentPage = "destination"
+
+  constructor(private renderer : Renderer2) { }
+
 
   ngAfterViewInit() {
   }
@@ -21,6 +26,23 @@ export class AppComponent implements AfterViewInit {
   closeMenu(event: boolean) {
     this.isMenuOpen = event;
     console.log(this.isMenuOpen)
+  }
+
+  changePage(event: string) {
+    this.currentPage = event;
+
+    if (event == "destination") {
+      this.renderer.setStyle(this.containerElement.nativeElement, 'height', '700px');
+    }
+
+    if (event == "crew" || event == " technology") {
+      this.renderer.setStyle(this.containerElement.nativeElement, 'height', '710px');
+    }
+
+    if (event == "home") {
+      this.renderer.setStyle(this.containerElement.nativeElement, 'height', '668px');
+    }
+    
   }
 
 

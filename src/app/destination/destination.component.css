@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url(/assets/fonts/BarlowCondensed-Regular.ttf) format("truetype");
+}
+
+.container {
+    display: block;
+    height: 800px;
+    width: 100%;
+    margin-top: -88px;
+    z-index: -1;
+    
+}
+
+.background {
+    background-image: url("/assets/assets/destination/background-destination-mobile.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+    margin-top: -105px;
+
+}
+
+
+.pick-your-destination {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.pick-your-destination .number {
+    font-family: 'Barlow Condensed';
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.25;
+    line-height: 19px;
+}
+
+.pick-your-destination .text-pick-your-destination {
+    font-family: 'Barlow Condensed';
+    color: white;
+    font-size: 13px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    margin-left: 17px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+.planet-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+    margin-top: 30px;   
+}
+
+.planet-navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    margin-top: 30px;
+}
+.planet-navigation button {
+    font-size: 13px;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: white;
+    background: transparent;
+    border: none;
+
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.2rem;
+}
+
+.planet-name {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    margin-top: 30px;
+}
+
+.planet-description {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+
+    text-align: center;
+
+    color: #D0D6F9;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-top: 40px;
+    height: 5px;
+}
+
+.average-distance {
+    margin-top: 50px;
+    width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.average-distance .text {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+
+}
+
+.average-distance .value {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+    margin-top: 12px;
+}
+
+.est-travel-time {
+    margin-top: 50px;
+    width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.est-travel-time .text {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+}
+
+.est-travel-time .value {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+    margin-top: 12px;
+}

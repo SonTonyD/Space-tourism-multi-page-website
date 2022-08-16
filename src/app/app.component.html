@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" #screen>
     <div class="nav-bar">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
@@ -8,10 +8,10 @@
         </div>
     </div>
     
-    <app-home *ngIf="state[0]"></app-home>
-    <app-destination *ngIf="state[1]"></app-destination>
-    <app-crew *ngIf="state[2]"></app-crew>
-    <app-technology *ngIf="state[3]"></app-technology>
-    <app-menu [isMenuOpen]="isMenuOpen" (closeMenuSignal)="closeMenu($event)" #sidenav></app-menu>
+    <app-home *ngIf="currentPage == 'home'" ></app-home>
+    <app-destination *ngIf="currentPage == 'destination'"></app-destination>
+    <app-crew *ngIf="currentPage == 'crew'"></app-crew>
+    <app-technology *ngIf="currentPage == 'technology'"></app-technology>
+    <app-menu [isMenuOpen]="isMenuOpen" (closeMenuSignal)="closeMenu($event)" (currentPage)="changePage($event)" #sidenav></app-menu>
 </div>
 

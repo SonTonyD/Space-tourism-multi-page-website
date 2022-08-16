@@ -1,3 +1,5 @@
+
+
 .container {
     height: 668px;
     width: 376px;
@@ -6,6 +8,7 @@
 .nav-bar {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .logo {

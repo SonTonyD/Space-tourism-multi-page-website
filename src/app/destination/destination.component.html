@@ -1,1 +1,33 @@
-<p>destination works!</p>
+<div class="container">
+    <div class="background"></div>
+    <div class="pick-your-destination">
+        <div class="number">01</div>
+        <div class="text-pick-your-destination">pick your destination</div>
+    </div>
+    <div class="planet-image">
+        <img src= "{{currentPlanetImage}}" width = "170" height = "170"> 
+    </div>
+    <div class="planet-navigation">
+        <button (click)="applyChangeDestinations(moonData)">moon</button>
+        <button (click)="applyChangeDestinations(marsData)">mars</button>
+        <button (click)="applyChangeDestinations(europaData)">europa</button>
+        <button (click)="applyChangeDestinations(titanData)">titan</button>
+    </div>
+    <div class="planet-name">{{currentPlanetName}}</div>
+    <div class="planet-description"> {{currentPlanetDescription}} </div>
+    <div class="divider">
+        <svg width="350">
+            <g>
+                <line x1="0" y1="1" x2="400" y2="1" stroke="#383B4B" stroke-width="1%" />
+            </g>
+        </svg>
+    </div>
+    <div class="average-distance">
+        <div class="text">avg. distance</div>
+        <div class="value">{{currentDistance}}</div>
+    </div>
+    <div class="est-travel-time">
+        <div class="text">est. travel time</div>
+        <div class="value">{{currentTravel}}</div>
+    </div>
+</div>

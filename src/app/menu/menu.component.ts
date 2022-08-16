@@ -11,6 +11,8 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
 
   @Input() isMenuOpen!: boolean;
   @Output() closeMenuSignal = new EventEmitter<boolean>();
+  @Output() currentPage = new EventEmitter<string>();
+
 
   constructor(private renderer : Renderer2) { }
 
@@ -42,5 +44,9 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
       this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '254px');
     }
   }
+  onHome() {this.currentPage.emit("home"); this.onClose()}
+  onDestination() {this.currentPage.emit("destination"); this.onClose()}
+  onCrew() {this.currentPage.emit("crew"); this.onClose()}
+  onTechnology(){this.currentPage.emit("technology"); this.onClose()}
 
 }

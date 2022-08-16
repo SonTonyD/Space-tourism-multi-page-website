@@ -1,5 +1,5 @@
 .container {
-    height: 668px;
+    height: 100%;
     width: 376px;
     background-image: url("/assets/assets/home/background-home-mobile.jpg");
     position: fixed;
