@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { AppService } from '../app.service';
+import KeenSlider, { KeenSliderInstance } from "keen-slider"
 
 @Component({
   selector: 'app-crew',

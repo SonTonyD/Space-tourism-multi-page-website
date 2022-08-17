@@ -3,6 +3,13 @@
     src: url(/assets/fonts/BarlowCondensed-Regular.ttf) format("truetype");
 }
 
+.keen-slider {
+    display: block;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+}
+
 .container {
     display: block;
     height: 640px;
@@ -19,6 +26,7 @@
     position: fixed;
     z-index: -2;
     margin-top: -105px;
+    background-repeat: none;
 
 }
 
