@@ -6,11 +6,12 @@ import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild} from '@angu
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
+  title = "space-tourism"
 
   @ViewChild('screen') containerElement!: ElementRef;
   
   isMenuOpen = false;
-  currentPage = "destination"
+  currentPage = "crew"
 
   constructor(private renderer : Renderer2) { }
 
@@ -36,7 +37,7 @@ export class AppComponent implements AfterViewInit {
     }
 
     if (event == "crew" || event == " technology") {
-      this.renderer.setStyle(this.containerElement.nativeElement, 'height', '710px');
+      this.renderer.setStyle(this.containerElement.nativeElement, 'height', '668px');
     }
 
     if (event == "home") {

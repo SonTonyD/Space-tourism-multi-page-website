@@ -1,1 +1,26 @@
-<p>crew works!</p>
+<div class="container">
+    <div class="background"></div>
+    <div class="meet-your-crew">
+        <div class="number">02</div>
+        <div class="text-meet-your-crew">meet your crew</div>
+    </div>
+    <div class="crew-image">
+        <img src= "{{currentCrewImage}}" width = "220" height = "223"> 
+    </div>
+    <div class="divider">
+        <svg width="320">
+            <g>
+                <line x1="15" y1="1" x2="400" y2="1" stroke="#383B4B" stroke-width="1%" />
+            </g>
+        </svg>
+    </div>
+    <div class="crew-navigation">
+        <button (click)="applyChangeCrew(crewMember1)" #crewMemberBtn1></button>
+        <button (click)="applyChangeCrew(crewMember2)" #crewMemberBtn2></button>
+        <button (click)="applyChangeCrew(crewMember3)" #crewMemberBtn3></button>
+        <button (click)="applyChangeCrew(crewMember4)" #crewMemberBtn4></button>
+    </div>
+    <div class="crew-role">{{currentCrewRole}}</div>
+    <div class="crew-name">{{currentCrewName}}</div>
+    <div class="crew-bio"> {{currentCrewBio}} </div>
+</div>
