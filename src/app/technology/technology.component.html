@@ -1,1 +1,18 @@
-<p>technology works!</p>
+<div class="container">
+    <div class="background"></div>
+    <div class="space-launch">
+        <div class="number">03</div>
+        <div class="text-space-launch">space launch 101</div>
+    </div>
+    <div class="tech-image">
+        <img src= "{{currentTechImage}}" width = "100%" height = "170"> 
+    </div>
+    <div class="tech-navigation">
+        <button (click)="applyChangeTech(tech1)" #techBtn1>1</button>
+        <button (click)="applyChangeTech(tech2)" #techBtn2>2</button>
+        <button (click)="applyChangeTech(tech3)" #techBtn3>3</button>
+    </div>
+    <div class="tech-role">the terminology...</div>
+    <div class="tech-name">{{currentTechName}}</div>
+    <div class="tech-description"> {{currentTechDescription}} </div>
+</div>
