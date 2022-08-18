@@ -11,7 +11,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('screen') containerElement!: ElementRef;
   
   isMenuOpen = false;
-  currentPage = "crew";
+  currentPage = "home";
 
   constructor(private renderer : Renderer2) { }
 
