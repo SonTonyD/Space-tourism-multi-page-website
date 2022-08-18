@@ -1,15 +1,19 @@
 .container {
     height: 100%;
-    width: 376px;
+    width: 100vw;
     background-image: url("/assets/assets/home/background-home-mobile.jpg");
     position: fixed;
     margin-top: -73px;
     z-index: -1;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .presentation-block {
     margin-top: 112px;
-    margin-left: 24px;
+    margin-left: auto;
+    margin-right: auto;
     width: 327px;
     height: 276px;
 
@@ -41,9 +45,10 @@
 
 .explore {
     display: block;
-    margin-left: 100px;
+    margin-left: auto;
     margin-top: 55px;
     margin-right: auto;
+    width: 180px;
 }
 
 .svg-container {
