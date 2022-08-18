@@ -11,7 +11,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('screen') containerElement!: ElementRef;
   
   isMenuOpen = false;
-  currentPage = "home";
+  currentPage = "crew";
 
   constructor(private renderer : Renderer2) { }
 
@@ -21,12 +21,10 @@ export class AppComponent implements AfterViewInit {
 
   onOpenMenu() {
     this.isMenuOpen = true;
-    console.log(this.isMenuOpen)
   } 
 
   closeMenu(event: boolean) {
     this.isMenuOpen = event;
-    console.log(this.isMenuOpen)
   }
 
   changePage(event: string) {

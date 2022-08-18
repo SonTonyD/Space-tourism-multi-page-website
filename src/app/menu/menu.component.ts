@@ -21,7 +21,6 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
       if (changes['isMenuOpen'].currentValue) {
         this.onOpen();
       }
-      console.log("change")
     }
     
   }
