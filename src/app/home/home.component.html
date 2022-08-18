@@ -1,15 +1,16 @@
 <div class="container">
+    <div class="background"></div>
     <div class="presentation-block">
         <div class="top-sentence">so, you want to travel to</div>
         <div class="title">space</div>
         <div class="description">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</div>
     </div>
 
-    <div class="explore">
+    <div class="explore" (click)="onExplore()" >
         <div class="svg-container">
-            <svg>
+            <svg >
                 <g>
-                    <circle cx="85px" cy="85px" r="80px" fill="#FFFFFF"/>
+                    <circle  cx="85px" cy="85px" r="80px" fill="#FFFFFF"/>
                     <text x="50%" y="50%" text-anchor="middle" stroke-width="2px" dy=".3em" font-size="20px" letter-spacing="1.25px">EXPLORE</text>
                 </g>
             </svg>

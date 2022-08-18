@@ -1,10 +1,18 @@
 .container {
     height: 100%;
     width: 100vw;
+    margin-top: -10px;
+    z-index: 0;
+    width: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100vw;
     background-image: url("/assets/assets/home/background-home-mobile.jpg");
     position: fixed;
-    margin-top: -73px;
-    z-index: -1;
+    margin-top: -175px;
+    z-index: -3;
     width: 100%;
     background-repeat:no-repeat;
     background-size: cover;

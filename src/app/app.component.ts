@@ -11,7 +11,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('screen') containerElement!: ElementRef;
   
   isMenuOpen = false;
-  currentPage = "technology";
+  currentPage = "home";
 
   constructor(private renderer : Renderer2) { }
 
@@ -44,6 +44,10 @@ export class AppComponent implements AfterViewInit {
       this.renderer.setStyle(this.containerElement.nativeElement, 'height', '668px');
     }
     
+  }
+
+  onExplore(event : string) {
+    this.currentPage = event;
   }
 
 
