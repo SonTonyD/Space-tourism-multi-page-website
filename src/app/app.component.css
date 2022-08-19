@@ -24,3 +24,9 @@
     margin-top: 33px;
     margin-right: 24px;
 }
+
+@media(min-width: 500px) {
+    .open-menu {
+        display: none;
+    }
+}

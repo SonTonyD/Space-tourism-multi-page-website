@@ -9,6 +9,11 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
   @ViewChild('sidebar') sidebarElement!: ElementRef;
   @ViewChild('closeButton') closeButtonElement!: ElementRef;
 
+  @ViewChild('labelHome') labelHomeElement !: ElementRef;
+  @ViewChild('labelDestination') labelDestinationElement !: ElementRef;
+  @ViewChild('labelCrew') labelCrewElement !: ElementRef;
+  @ViewChild('labelTechnology') labelTechnologyElement !: ElementRef;
+
   @Input() isMenuOpen!: boolean;
   @Output() closeMenuSignal = new EventEmitter<boolean>();
   @Output() currentPage = new EventEmitter<string>();
@@ -26,7 +31,16 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   ngAfterViewInit(): void {
-    this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '0px');
+    
+    if (window.innerWidth > 500) {
+      this.applyUnderline(this.labelHomeElement , this.labelDestinationElement, this.labelCrewElement, this.labelTechnologyElement);
+    }
+    if (window.innerWidth < 500) {
+      this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '0px');
+    }
+    
+
+    
   }
 
   ngOnInit(): void {
@@ -34,18 +48,62 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   onClose() {
-    this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '0px');
-    this.closeMenuSignal.emit(false);
+    if (window.innerWidth < 500) {
+      this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '0px');
+      this.closeMenuSignal.emit(false);
+    }
+    
   }
 
   onOpen() {
-    if (this.sidebarElement != undefined) {
-      this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '254px');
+    if (window.innerWidth > 500) {
+      if (this.sidebarElement != undefined) {
+        this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '550px');
+        this.renderer.setStyle(this.sidebarElement.nativeElement, 'height', '150px');
+      }
+      console.log('tablet screen detected')
+    }
+
+    if (window.innerWidth < 500) {
+      if (this.sidebarElement != undefined) {
+        this.renderer.setStyle(this.sidebarElement.nativeElement, 'width', '254px');
+      }
+      console.log("mobile screen detected")
     }
   }
-  onHome() {this.currentPage.emit("home"); this.onClose()}
-  onDestination() {this.currentPage.emit("destination"); this.onClose()}
-  onCrew() {this.currentPage.emit("crew"); this.onClose()}
-  onTechnology(){this.currentPage.emit("technology"); this.onClose()}
+
+
+  onHome() {
+    this.currentPage.emit("home");
+    this.applyUnderline(this.labelHomeElement , this.labelDestinationElement, this.labelCrewElement, this.labelTechnologyElement);
+    this.onClose();
+  }
+  onDestination() {
+    this.currentPage.emit("destination");
+    this.applyUnderline(this.labelDestinationElement , this.labelHomeElement, this.labelCrewElement, this.labelTechnologyElement); 
+    this.onClose();
+  }
+  onCrew() {
+    this.currentPage.emit("crew");
+    this.applyUnderline(this.labelCrewElement , this.labelDestinationElement, this.labelHomeElement, this.labelTechnologyElement); 
+    this.onClose();
+  }
+  onTechnology(){
+    this.currentPage.emit("technology");
+    this.applyUnderline(this.labelTechnologyElement , this.labelDestinationElement, this.labelCrewElement, this.labelHomeElement); 
+    this.onClose();
+  }
+
+
+  applyUnderline(btnElementUnderline : ElementRef, btnElement1 : ElementRef, btnElement2 : ElementRef, btnElement3 : ElementRef) {
+    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration', 'underline');
+    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-underline-offset', '2.35rem');
+    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration-thickness', '0.2rem');
+
+    //hide underline on btnElement1, btnElement2 and btnElement3
+    this.renderer.setStyle(btnElement1.nativeElement, 'text-decoration', 'none');
+    this.renderer.setStyle(btnElement2.nativeElement, 'text-decoration', 'none');
+    this.renderer.setStyle(btnElement3.nativeElement, 'text-decoration', 'none');
+  }
 
 }

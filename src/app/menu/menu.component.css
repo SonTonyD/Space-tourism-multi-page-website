@@ -20,6 +20,7 @@
     opacity: 0.5;
     z-index: 1;
     
+    
 }
 
 button {
@@ -63,4 +64,56 @@ button {
 
 .close-btn:active {
     opacity: 0.5;
+}
+
+@media(min-width : 500px) {
+    .container {
+        height: 100%;
+        backdrop-filter: blur(10px);
+        position:absolute;
+        width: 550px;
+        height: 100px;
+        transition: none;
+        overflow: unset; 
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 0px;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    button {
+        margin-left: 0px;
+        margin-right: 0px;
+        z-index: 2;
+        background: transparent;
+        border: none;
+        width: auto;
+        height: 50px;
+        
+    }
+
+    .mask {
+        margin-top: -48px;
+    }
+
+    .menu-label {
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        position: inherit;
+        padding-left: 0px;
+        margin-top: 45px;
+    }
+    .menu-number {
+        font-size: 8px;
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
 }

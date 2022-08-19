@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url(/assets/fonts/BarlowCondensed-Regular.ttf) format("truetype");
+}
+
 .container {
     height: 100%;
     width: 100vw;
@@ -32,6 +37,7 @@
     font-size: 16px;
     color: #D0D6F9;
     text-transform: uppercase;
+    font-family: 'Barlow Condensed';
     
 }
 
@@ -41,6 +47,8 @@
     color: #D0D6F9;
     text-transform: uppercase;
     margin-top: 16px;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 0.65rem;
 }
 
 .description {
@@ -49,6 +57,7 @@
     font-size: 15px;
     color: #D0D6F9;
     margin-top: 16px;
+    font-family: 'Barlow Condensed';
 }
 
 .explore {
@@ -65,8 +74,61 @@
     height: 170px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 500px) {
     .title {
-        color: red;
+        font-size: 200px;
+        text-align: center;
     }
+
+    .top-sentence {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .presentation-block {
+        margin-top: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        height: 335px;
+    }
+
+    .background {
+        height: 100%;
+        width: 100vw;
+        background-image: url('/assets/assets/home/background-home-tablet.jpg');
+        position: fixed;
+        margin-top: -172px;
+        z-index: -3;
+        width: 100%;
+        background-repeat:no-repeat;
+        background-size: cover;
+
+    }
+
+    .explore {
+        margin-top: 20%;
+        width: 300px;
+    }
+
+    .svg-container {
+        display: flex;
+        width: 300px;
+        height: 305px;
+    }
+
+    circle {
+        r : 150px;
+        cx :150px;
+        cy :150px;
+    }
+
+    text {
+        font-size: 30px;
+    }
+
 }
