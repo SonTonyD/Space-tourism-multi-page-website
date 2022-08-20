@@ -132,3 +132,42 @@
     }
 
 }
+
+@media(min-width: 1200px) {
+    .background {
+        background-image: url("/assets/assets/home/background-home-desktop.jpg");
+    }
+
+    .container {
+        display: flex;
+        padding-top: 180px;
+    }
+
+    .explore {
+        margin-top: 300px;
+        width: 300px;
+    }
+
+    .top-sentence {
+        text-align: left;
+        font-size: 40px;
+        word-spacing: 0.30rem;
+        letter-spacing: 0.25rem;
+        width: 600px;
+    }
+
+    .title {
+        font-size: 250px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: left;
+        line-height: 40px;
+        width: 600px;
+        color: #D0D6F9;
+        opacity: 0.75;
+    }
+}
