@@ -98,8 +98,8 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
   applyUnderline(btnElementUnderline : ElementRef, btnElement1 : ElementRef, btnElement2 : ElementRef, btnElement3 : ElementRef) {
     if (window.innerWidth > 500) {
       this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration', 'underline');
-      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-underline-offset', '2.35rem');
-      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration-thickness', '0.2rem');
+      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-underline-offset', '1.955vw');
+      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration-thickness', '0.1664vw');
 
       //hide underline on btnElement1, btnElement2 and btnElement3
       this.renderer.setStyle(btnElement1.nativeElement, 'text-decoration', 'none');

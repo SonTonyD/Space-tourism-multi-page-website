@@ -25,8 +25,41 @@
     margin-right: 24px;
 }
 
+.divider {
+    display: none;
+}
+
 @media(min-width: 500px) {
     .open-menu {
         display: none;
+    }
+}
+
+@media(min-width : 1200px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 0.95vw;
+        margin-top: 0.95vw;
+    }
+
+
+    img {
+        position: relative;
+        padding-top: 1.4vw;
+        padding-left: 1.4vw;
+        width: 4vw;
+    }
+
+    .divider {
+        position: fixed;
+        display: flex;
+        margin-top: 4.7vw;
+        margin-left: 8vw;
+        z-index: 1;
+    }
+
+    svg {
+        width : 40vw;
     }
 }
