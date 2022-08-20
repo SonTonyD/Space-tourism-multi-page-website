@@ -18,16 +18,21 @@
     <div class="divider">
         <svg width="320">
             <g>
-                <line x1="15" y1="1" x2="400" y2="1" stroke="#383B4B" stroke-width="1%" />
+                <line class="mobile-line" x1="15" y1="1" x2="400" y2="1" stroke="#383B4B" stroke-width="1%" />
+                <line class="tablet-line" x1="15" y1="1" x2="620" y2="1" stroke="#383B4B" stroke-width="0.5%" />
             </g>
         </svg>
     </div>
-    <div class="average-distance">
-        <div class="text">avg. distance</div>
-        <div class="value">{{currentDistance}}</div>
+
+    <div class="bottom-planet-info">
+        <div class="average-distance">
+            <div class="text">avg. distance</div>
+            <div class="value">{{currentDistance}}</div>
+        </div>
+        <div class="est-travel-time">
+            <div class="text">est. travel time</div>
+            <div class="value">{{currentTravel}}</div>
+        </div>
     </div>
-    <div class="est-travel-time">
-        <div class="text">est. travel time</div>
-        <div class="value">{{currentTravel}}</div>
-    </div>
+    
 </div>

@@ -96,14 +96,16 @@ export class MenuComponent implements OnInit, AfterViewInit, OnChanges {
 
 
   applyUnderline(btnElementUnderline : ElementRef, btnElement1 : ElementRef, btnElement2 : ElementRef, btnElement3 : ElementRef) {
-    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration', 'underline');
-    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-underline-offset', '2.35rem');
-    this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration-thickness', '0.2rem');
+    if (window.innerWidth > 500) {
+      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration', 'underline');
+      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-underline-offset', '2.35rem');
+      this.renderer.setStyle(btnElementUnderline.nativeElement, 'text-decoration-thickness', '0.2rem');
 
-    //hide underline on btnElement1, btnElement2 and btnElement3
-    this.renderer.setStyle(btnElement1.nativeElement, 'text-decoration', 'none');
-    this.renderer.setStyle(btnElement2.nativeElement, 'text-decoration', 'none');
-    this.renderer.setStyle(btnElement3.nativeElement, 'text-decoration', 'none');
+      //hide underline on btnElement1, btnElement2 and btnElement3
+      this.renderer.setStyle(btnElement1.nativeElement, 'text-decoration', 'none');
+      this.renderer.setStyle(btnElement2.nativeElement, 'text-decoration', 'none');
+      this.renderer.setStyle(btnElement3.nativeElement, 'text-decoration', 'none');
+    }
+    
   }
-
 }
