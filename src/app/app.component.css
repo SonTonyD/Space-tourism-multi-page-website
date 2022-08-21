@@ -62,4 +62,13 @@
     svg {
         width : 40vw;
     }
+
+    .nav-bar {
+        height: 0px;
+    }
+
+    .container {
+        height: 668px;
+        width: 100vw;
+    }
 }

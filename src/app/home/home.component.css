@@ -139,6 +139,7 @@
         background-image: url("/assets/assets/home/background-home-desktop.jpg");
         margin-top: -8.58vw;
         overflow: hidden;
+        height: 75vw;
     }
 
     .container {
@@ -215,6 +216,7 @@
         background-image: url("/assets/assets/home/background-home-desktop.jpg");
         margin-top: -9vw;
         overflow: hidden;
+        
     }
 
     .container {

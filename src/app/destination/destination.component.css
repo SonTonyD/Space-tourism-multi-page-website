@@ -116,6 +116,10 @@
     display: none;
 }
 
+.desktop-line {
+    display: none;
+}
+
 .average-distance {
     margin-top: 50px;
     width: 216px;
@@ -381,4 +385,199 @@
         color: #D0D6F9;
         margin-top: 27px;
     }
+
+    
+}
+
+@media(min-width: 1024px) {
+
+    .background {
+        background-image: url("/assets/assets/destination/background-destination-desktop.jpg");
+        margin-top: -4.5vw;
+        height: 85vw;
+    }
+
+    .pick-your-destination {
+        margin-top: 6.27vw;
+        padding-top: 11vw;
+        padding-left: 9vw;
+        display: flex;
+        justify-content: left;
+    }
+
+    .pick-your-destination .number {
+        font-family: 'Barlow Condensed';
+        color: white;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        opacity: 0.25;
+        line-height: 19px;
+    }
+    
+    .pick-your-destination .text-pick-your-destination {
+        font-family: 'Barlow Condensed';
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 400px;
+        text-transform: uppercase;
+        margin-left: 0.9vw;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+    .bottom-planet-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop-view {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    .desktop-right {
+        display: block;
+        margin-top: 27vw;
+        margin-left: 20vw;
+    }
+
+    .planet-description {
+        text-align: left;
+        font-size: 1.2vw;
+        line-height: 2vw;
+        width: 33vw;
+        margin-top: 3vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .planet-name {
+        text-align: left;
+        font-size: 7vw;
+        margin-top: 5vw;
+        line-height: 4.81vw;
+    }
+
+    .planet-navigation {
+        justify-content: flex-start;
+        column-gap: 3vw;
+        margin-top: 2vw;
+    }
+
+    .planet-navigation button {
+        font-size: 1vw;
+        cursor: pointer;
+    }
+    .planet-navigation button:hover {
+        opacity: 0.7;
+        
+    }
+
+    .bottom-planet-info {
+        justify-content: flex-start;
+        column-gap: 3vw;
+        height: 5vw;
+        width: 30vw;
+    }
+
+    .divider {
+        width: 1vw;
+        display: block;
+    }
+
+    .desktop-line {
+        display: block;
+    }
+    svg {
+        margin-left: -17vw;
+        width: 30vw;
+    }
+    .tablet-line {
+        display: none;
+    }
+
+    .average-distance {
+        margin-top: 3.5vw;
+        width: 11.29vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .average-distance .text {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        line-height: 0.88vw;
+    
+        text-align: center;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+    
+        color: grey;
+    
+    }
+    
+    .average-distance .value {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.0vw;
+        line-height: 0.88vw;
+    
+        text-align: center;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+    
+        color: #D0D6F9;
+        margin-top: 27px;
+    }
+    
+    .est-travel-time {
+        margin-top: 3.5vw;
+        width: 11.29vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .est-travel-time .text {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        line-height: 0.88vw;
+    
+        text-align: center;
+        letter-spacing: 2.0px;
+        text-transform: uppercase;
+    
+        color: grey;
+    }
+    
+    .est-travel-time .value {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.0vw;
+        line-height: 0.88vw;
+    
+        text-align: center;
+        letter-spacing: 2.0px;
+        text-transform: uppercase;
+    
+        color: #D0D6F9;
+        margin-top: 27px;
+    }
+
+    .planet-image {
+        width: 10vw;
+        height: 10vw;
+        margin-top: 11vw;  
+    }
+
+    img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+
 }
