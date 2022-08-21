@@ -120,7 +120,7 @@ button {
         display: none;
     }
 
-    @media(min-width : 1200px) {
+    @media(min-width : 1024px) {
         .container {
             width: 55vw;
             height: 5.2vw;
@@ -133,7 +133,7 @@ button {
             letter-spacing: 0.05vw;
             position: inherit;
             padding-left: 0px;
-            margin-top: 2.34vw;
+            margin-top: 1.9vw;
             opacity: 0.85;
             cursor: pointer;
         }
@@ -146,6 +146,10 @@ button {
 
         .mask {
             background-color: rgba(217, 217, 217, 0.299);
+        }
+
+        button {
+            height: 50px;  
         }
     }
 }

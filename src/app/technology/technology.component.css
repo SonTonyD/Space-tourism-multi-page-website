@@ -208,5 +208,119 @@
         letter-spacing: 1.2px;
     }
 }
+@media(min-width: 1024px) {
+    .background {
+        background-image: url("/assets/assets/technology/background-technology-desktop.jpg");
+        height: 85vw;
+    }
+
+    .space-launch {
+        display: none;
+    }
+
+    .space-launch-desktop {
+        margin-top: 6.27vw;
+        padding-top: 11vw;
+        padding-left: 9vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .space-launch-desktop .number {
+        font-family: 'Barlow Condensed';
+        color: white;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        opacity: 0.25;
+        line-height: 19px;
+    }
+    
+    .space-launch-desktop .text-space-launch-desktop {
+        font-family: 'Barlow Condensed';
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 400px;
+        text-transform: uppercase;
+        margin-left: 0.9vw;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .desktop-view {
+        display: flex;
+    }
+
+    .desktop-left {
+        order: 1;
+    }
+    .desktop-right {
+        order: 2;
+    }
+
+    .tech-navigation {
+        display: absolute;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2vw;
+        margin-top: -2vw;
+        margin-left: 9vw;
+    }
+    .tech-navigation button {
+        font-size: 2vw;
+        text-transform: uppercase;
+        list-style-type: none;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 50%;
+    }
+    .tech-navigation button:hover{
+        cursor: pointer;
+        box-shadow: 0 0 0 0.5vw #ffffff; 
+        border-radius:50%;
+    }
+
+    .left-zone {
+        display: flex;
+        column-gap: 5vw;
+        width: 67vw;
+        height: 50vw;
+    }
+
+    .tech-image {
+        display: block;
+        margin-top: 20vw;   
+    }
+    img {
+        height: 40vw;
+    }
+
+    .tech-role {
+        font-size: 1.5vw;
+        margin-top: 12vw;
+        text-align: left;
+    }
+
+    .tech-name {
+        font-size: 5vw;
+        margin-top: 3vw;
+        text-align: left;
+    }
+
+    .tech-description {
+        font-family: 'barlow-condensed';
+        font-size: 1.3vw;
+        line-height: 2vw;
+        width: 35vw;
+        margin-top: 7vw;
+        letter-spacing: 1.2px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
 
 

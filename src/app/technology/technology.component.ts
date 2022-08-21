@@ -38,7 +38,13 @@ export class TechnologyComponent implements OnInit {
   }
 
   applyChangeTech(tech: any) {
-    this.currentTechImage = "/assets/" + tech.images.landscape;
+    if (window.innerWidth > 1024) {
+      this.currentTechImage = "/assets/" + tech.images.portrait;
+    }
+    else {
+      this.currentTechImage = "/assets/" + tech.images.landscape;
+    }
+    
     this.currentTechName = tech.name;
     this.currentTechDescription = tech.description;
 

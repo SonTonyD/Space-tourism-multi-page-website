@@ -335,6 +335,11 @@ img {
         width: 0.7vw;
         height: 0.7vw;
     }
+    .crew-navigation button:hover{
+        cursor: pointer;
+        box-shadow: 0 0 0 0.5vw #ffffff; 
+        border-radius:50%;
+    }
 
     .desktop-left {
         display: flex;
