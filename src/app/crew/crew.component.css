@@ -194,7 +194,7 @@ img {
         opacity: 0.5;
         font-size: 26px;
         line-height: 20px;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .crew-name {
@@ -211,11 +211,12 @@ img {
         line-height: 30px;
         letter-spacing: 1.2px;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .crew-navigation {
         order: 4;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .crew-navigation button {
         width: 12px;
@@ -302,13 +303,13 @@ img {
 
     .crew-name {
         order: 2;
-        font-size: 4vw;
+        font-size: 3.2vw;
         letter-spacing: 3.2px;
         margin-top: 4vw;
         text-align: left;
         margin-left: 0;
         margin-right: 0;
-        line-height: 1.56vw;
+        line-height: 3vw;
     }
 
     .crew-bio {
@@ -344,7 +345,7 @@ img {
     .desktop-left {
         display: flex;
         flex-direction: column;
-        width: 50vw;
+        width: 55vw;
         margin-left: 9vw;
         order: 1;
         text-align: left;
@@ -353,7 +354,7 @@ img {
     .desktop-right {
         margin-top: 0px;
         order: 2;
-        margin-right: 15vw;
+        margin-right: 5vw;
     }
 
     .desktop-view {
